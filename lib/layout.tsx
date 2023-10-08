@@ -5,7 +5,7 @@ import  ToastProvider  from '@/providers/toast-provider'
 import { ThemeProvider } from '@/providers/theme-provider'
 import { AnimatePresence, motion } from 'framer-motion'
 import Transition from '@/components/Transition';
-import Nav from '@/components/nav';
+import Nav from '@/components/Nav';
 import { useRouter } from 'next/router';
 import '@/styles/globals.css';
 
