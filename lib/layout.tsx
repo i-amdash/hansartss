@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/providers/theme-provider'
 import { AnimatePresence, motion } from 'framer-motion'
 import Transition from '@/components/Transition';
 import Nav from '@/components/Nav';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import '@/styles/globals.css';
 
 
@@ -18,7 +18,7 @@ const Layout = () => {
       
   return (
       <AnimatePresence mode='wait'>
-        <motion.div key={router.route} className='h-full'>
+        <motion.div className='h-full'>
             <Transition />
             <ThemeProvider 
             attribute="class" 
