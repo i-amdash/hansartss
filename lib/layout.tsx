@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/providers/theme-provider'
 import { AnimatePresence, motion } from 'framer-motion'
 import Transition from '@/components/Transition';
 import Nav from '@/components/nav';
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import '@/styles/globals.css';
 
 
