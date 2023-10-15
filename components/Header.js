@@ -14,7 +14,7 @@ const Header = () => {
         <h2 className="h3">hans <span className="text-accent"> artss</span></h2>
           {/* <Image src={'/logo.svg'} alt="" width={220} height={48} priority={true}/> */}
         </Link>
-        <div className="flex flex-col lg:flex-row" >
+        <div className="flex flex-row gap-x-4" >
         <ThemeToggle />
         <Socials />
         </div>

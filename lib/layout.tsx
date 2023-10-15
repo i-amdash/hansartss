@@ -20,15 +20,8 @@ const Layout = () => {
       <AnimatePresence mode='wait'>
         <motion.div className='h-full'>
             <Transition />
-            <ThemeProvider 
-            attribute="class" 
-            defaultTheme="dark" 
-            enableSystem
-          >
-              <ToastProvider />
-              <ModalProvider />
+            
               <Nav />
-          </ThemeProvider>
     </motion.div>
           </AnimatePresence>
   )

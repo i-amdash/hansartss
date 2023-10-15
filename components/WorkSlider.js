@@ -16,19 +16,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/p1.jpeg',
+          path: '/hans1.jpeg',
         },
         {
           title: 'title',
-          path: '/p2.jpeg',
+          path: '/hans2.jpeg',
         },
         {
           title: 'title',
-          path: '/p3.jpeg',
+          path: '/hans3.jpeg',
         },
         {
           title: 'title',
-          path: '/p4.jpeg',
+          path: '/hans4.jpeg',
         },
       ],
     },
@@ -36,19 +36,19 @@ const workSlides = {
       images: [
         {
           title: 'title',
-          path: '/p5.jpeg',
+          path: '/hans4.jpeg',
         },
         {
           title: 'title',
-          path: '/p6.jpeg',
+          path: '/hans1.jpeg',
         },
         {
           title: 'title',
-          path: '/p7.jpeg',
+          path: '/hans3.jpeg',
         },
         {
           title: 'title',
-          path: '/p9.jpeg',
+          path: '/hans2.jpeg',
         },
       ],
     },
@@ -63,7 +63,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className="h-[280px] sm:h-[600px]"
     >
       {workSlides.slides.map((slide, index) => {
         return (
@@ -75,8 +75,8 @@ const WorkSlider = () => {
                 <div className="flex items-center justify-center relative overflow-hidden group">
                   <Image 
                     src={image.path} 
-                    width={500}
-                    height={500}
+                    width={300}
+                    height={300}
                     alt=""
                   />
                   <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>

@@ -21,14 +21,14 @@ const PortfolioPage = () => {
             exit='hidden'
             className="h2 xl:mt-12"
           >
-            my works <span className="text-accent">.</span>
+            my wor<span className="text-accent">ks .</span>
           </motion.h2>
           <motion.p
             variants={fadeIn ('up', 0.4)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="mb-4 max0w0[400px] mx-auto lg:mx-0"
+            className="mb-4 max-w-[400px] mx-auto lg:mx-0"
           >
             some of my best works on display here
           </motion.p>

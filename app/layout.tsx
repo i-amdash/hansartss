@@ -4,6 +4,9 @@ import Layout from '@/lib/layout';
 import './globals.css'
 
 import { Sora } from '@next/font/google'
+import { ThemeProvider } from '@/providers/theme-provider';
+import ToastProvider from '@/providers/toast-provider';
+import ModalProvider from '@/providers/modal-provider';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,8 +31,16 @@ export default async function RootLayout({
       <html lang="en">
         <body className={sora.variable}>
           <div>
+          <ThemeProvider 
+            attribute="class" 
+            defaultTheme="dark" 
+            enableSystem
+          >
+            <ToastProvider />
+              <ModalProvider />
           <Layout />
             {children}
+            </ThemeProvider>
           </div>
         </body>
       </html>
