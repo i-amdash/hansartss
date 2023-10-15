@@ -21,7 +21,7 @@ const PortfolioPage = () => {
             exit='hidden'
             className="h2 xl:mt-12"
           >
-            my wor<span className="text-accent">ks .</span>
+            port<span className="text-accent">folio .</span>
           </motion.h2>
           <motion.p
             variants={fadeIn ('up', 0.4)}
