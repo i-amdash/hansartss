@@ -33,7 +33,7 @@ export default async function RootLayout({
           <div>
           <ThemeProvider 
             attribute="class" 
-            defaultTheme="dark" 
+            defaultTheme="system" 
             enableSystem
           >
             <ToastProvider />
