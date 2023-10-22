@@ -14,7 +14,7 @@ import { fadeIn } from '@/variants';
 
 const HomePage = () => {
   return (
-  <div className="bg-primary/30 h-[100vh]">
+  <div className=" h-[100vh]">
     <div className=" w-full h-full">
       <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
         <motion.h1 

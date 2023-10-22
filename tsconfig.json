@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-  ],
+, "providers/paystack-provider.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -7,7 +7,7 @@ import Home from "@/components/home";
 
 const CustomisePage = () => {
   return (
-  <div className="bg-primary/60 h-[100vh] transition-all ease-in">
+  <div className="h-[100vh] transition-all ease-in">
     <Home />
     <Customizer />
     <Canvas />

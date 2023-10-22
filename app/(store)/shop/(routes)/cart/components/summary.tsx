@@ -8,6 +8,7 @@ import Button from "@/components/ui/button";
 import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
 import { toast } from "react-hot-toast";
+import PaystackProvider from "@/providers/paystack-provider";
 
 const Summary = () => {
   const searchParams = useSearchParams();
@@ -52,9 +53,10 @@ const Summary = () => {
          <Currency value={totalPrice} />
         </div>
       </div>
-      <Button onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
+      <PaystackProvider amount={totalPrice}/>
+      {/* <Button onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
         Checkout
-      </Button>
+      </Button> */}
     </div>
   );
 }

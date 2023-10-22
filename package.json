@@ -29,6 +29,7 @@
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
+    "react-paystack": "^4.0.3",
     "react-spinners": "^0.13.8",
     "react-tsparticles": "^2.12.2",
     "sharp": "^0.32.6",

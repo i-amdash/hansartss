@@ -7,8 +7,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Transition from '@/components/Transition';
 import Nav from '@/components/Nav';
 import { useRouter } from 'next/navigation';
-import '@/styles/globals.css';
-
+import '@/app/globals.css';
 
 const Layout = () => {
 
