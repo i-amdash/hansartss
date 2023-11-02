@@ -53,10 +53,10 @@ const Summary = () => {
          <Currency value={totalPrice} />
         </div>
       </div>
-      <PaystackProvider amount={totalPrice}/>
-      {/* <Button onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
+      {/* <PaystackProvider amount={totalPrice}/> */}
+      <Button onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
         Checkout
-      </Button> */}
+      </Button>
     </div>
   );
 }
