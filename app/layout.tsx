@@ -32,7 +32,7 @@ export default async function RootLayout({
 }) {
   return (
       <html lang="en">
-        <body className={sora.variable}>
+        <body className={`${sora.variable} font-sora`}>
           <div>
           <ThemeProvider 
             attribute="class" 
