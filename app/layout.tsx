@@ -20,6 +20,9 @@ const sora = Sora({
 export const metadata = {
   title: 'Hans Artss',
   description: 'A Pantheon of Beautiful Thoughts',
+  icons: {
+    icon: '/icon.jpg',
+  },
 }
 
 export default async function RootLayout({

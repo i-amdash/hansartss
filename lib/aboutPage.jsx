@@ -46,21 +46,20 @@ const AboutPage = () => {
     const [index, setIndex] = useState(0);
     const [innerIndex, setInnerIndex] = useState(0);
     const [type, setType] = useState("");
+    const [exIndex, setexIndex] = useState(0);
 
-    // useEffect(() => {
-    //   const query = about
-    // }, [])
-    
     
     return (
         <div className="h-[100vh] bg-primary/30 py-32 text-center">
-            <motion.div className='flex py-6 flex-col md:flex-row'>
-                <motion.div 
+            <motion.div className='flex py-6 px-6 flex-col sm:flex-row'>
+                {
+                    index == 0 ?
+                    <motion.div 
                 variants={fadeIn('right' , 0.2)} 
                 initial="hidden" 
                 animate="show" 
                 exit="hidden"
-                className='flex flex-col justify-center items-center w-full xl:max-w-[42%]'>
+                className='flex flex-col justify-center items-center w-full h-[15rem] sm:h-full xl:max-w-[42%]'>
                     {about[index].data.map((abouts, aboutsId) => (
                         (aboutsId == innerIndex) && 
                         <img
@@ -71,6 +70,24 @@ const AboutPage = () => {
                     />
                     ))}
                 </motion.div>
+                :
+                <motion.div 
+                variants={fadeIn('right' , 0.2)} 
+                initial="hidden" 
+                animate="show" 
+                exit="hidden"
+                className='flex flex-col justify-center items-center w-full xl:max-w-[42%]'>
+                    {about[index].data.map((abouts, aboutsId) => (
+                        (aboutsId == exIndex) && 
+                        <img
+                        key={aboutsId}
+                        src={abouts.img}
+                        alt={abouts.title}
+                        className='w-[90%] h-[90%] object-contain'
+                    />
+                    ))}
+                </motion.div>
+                }
                 <motion.div
                 className='flex flex-col w-full xl:max-w-[48%]'
                 >
@@ -105,45 +122,91 @@ const AboutPage = () => {
                     exit="hidden"
                         className='py-2 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'
                     >
+                       {
+                        index == 0 ? 
                         <motion.div
-                            className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'
-                        >
-                            {about[index].data.map((item, itemIndex) => {
-                                return (
-                                    <div
-                                        key={itemIndex}
-                                        className={`${innerIndex === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                                        onClick={() => setInnerIndex(itemIndex)}
-                                    >
-                                        {item.title}
-                                    </div>
-                                )
-                            })}
-                        </motion.div>
-                    </motion.div>
-                    <motion.div 
-                        variants={fadeIn('up' , 0.4)} 
-                        initial="hidden" 
-                        animate="show" 
-                        exit="hidden"
-                        key={innerIndex}
-                        className='flex-1 flex flex-col max-w-max gap-x-2 items-center'
+                        className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'
                     >
-                        <div>
-                            {about[index].data.map((subItem, subItemIndex) => (
-                                (subItemIndex == innerIndex) && 
-                               <>
-                               <div key={subItemIndex} className='flex flex-start py-2 font-bold '>
-                                    {subItem?.subtitle}
+                        {about[index].data.map((item, itemIndex) => {
+                            return (
+                                <div
+                                    key={itemIndex}
+                                    className={`${innerIndex === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                                    onClick={() => setInnerIndex(itemIndex)}
+                                >
+                                    {item.title}
                                 </div>
-                                 <div className='flex flex-start text-justify' key={subItemIndex}>
-                                 {subItem.description}
-                             </div>
-                               </>
-                            ))}
-                        </div>
-                       
+                            )
+                        })}
                     </motion.div>
+                    :
+                    <motion.div
+                    className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'
+                >
+                    {about[index].data.map((item, itemIndex) => {
+                        return (
+                            <div
+                                key={itemIndex}
+                                className={`${exIndex === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                                onClick={() => setexIndex(itemIndex)}
+                            >
+                                {item.title}
+                            </div>
+                        )
+                    })}
+                </motion.div>
+                       }
+                    </motion.div>
+                   {
+                    index == 1  ?
+                    <motion.div 
+                    variants={fadeIn('up' , 0.4)} 
+                    initial="hidden" 
+                    animate="show" 
+                    exit="hidden"
+                    key={exIndex}
+                    className='flex-1 flex flex-col max-w-max gap-x-2 items-center'
+                >
+                    <div>
+                        {about[index].data.map((subItem, subItemIndex) => (
+                            (subItemIndex == exIndex) && 
+                           <>
+                           <div key={subItemIndex} className='flex flex-start py-2 font-bold '>
+                                {subItem?.subtitle}
+                            </div>
+                             <div className='flex flex-start text-justify' key={subItemIndex}>
+                             {subItem.description}
+                         </div>
+                           </>
+                        ))}
+                    </div>
+                   
+                </motion.div>
+                :
+                <motion.div 
+                variants={fadeIn('up' , 0.4)} 
+                initial="hidden" 
+                animate="show" 
+                exit="hidden"
+                key={innerIndex}
+                className='flex-1 flex flex-col max-w-max gap-x-2 items-center'
+            >
+                <div>
+                    {about[index].data.map((subItem, subItemIndex) => (
+                        (subItemIndex == innerIndex) && 
+                       <>
+                       <div key={subItemIndex} className='flex flex-start py-2 font-bold '>
+                            {subItem?.subtitle}
+                        </div>
+                         <div className='flex flex-start text-justify' key={subItemIndex}>
+                         {subItem.description}
+                     </div>
+                       </>
+                    ))}
+                </div>
+               
+            </motion.div>
+                   }
                 </motion.div>
             </motion.div>
         </div>

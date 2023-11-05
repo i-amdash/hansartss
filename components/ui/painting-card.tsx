@@ -23,7 +23,7 @@ const PaintingCard: React.FC<PaintingCard> = ({
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(`/painting/${data?.id}`);
+    router.push(`/shop/painting/${data?.id}`);
   };
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
