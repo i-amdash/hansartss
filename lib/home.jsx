@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
   <div className="h-[100vh] overflow-hidden">
     <div className=" w-full h-full">
-      <div className="text-center flex flex-col justify-center align-center xl:pt-40 xl:text-left h-full container mx-auto">
+      <div className="text-center flex flex-col justify-center lg:justify-start xl:pt-40 xl:text-left h-full container mx-auto">
         <motion.h1 
         variants={fadeIn('down' , 0.2)} 
         initial="hidden" 
