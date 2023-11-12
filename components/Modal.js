@@ -7,6 +7,7 @@ const Modal = ({
   clickedImg,
   setClickedImg,
   setTitle,
+  title
 }) => {
   const handleClick = (e) => {
     if (e.target.classList.contains('dismiss')) {
