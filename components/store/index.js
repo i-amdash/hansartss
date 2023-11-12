@@ -3,7 +3,7 @@ import React from 'react';
 
 const state = proxy({
     intro: true,
-    color: '#3E2B4E',
+    color: '#EFA110',
     isLogoTexture: true,
     isFullTexture: false,
     logoDecal: '/t-avt-1.png',

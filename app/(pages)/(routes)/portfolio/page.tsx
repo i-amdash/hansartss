@@ -1,4 +1,4 @@
-import Header from '@/components/Header';
+import Header from '@/components/PortfolioHeader';
 import PortfolioPage from '@/lib/portfolioPage';
 
 const Portfolio =  async () => {

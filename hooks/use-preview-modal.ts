@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-
 import { Painting } from '@/types';
 
 interface PreviewModalStore {

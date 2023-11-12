@@ -126,6 +126,17 @@ const Customizer = () => {
           >
             <div className='flex items-center min-h-screen'>
               <div className='editortabs-container tabs'>
+                {
+                  activeEditorTab != "" ?
+                  <div className="relative"><button onClick={() => {setActiveEditorTab("")}} type="button" className="bg-secondary rounded-md p-2 inline-flex items-center justify-center hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span className="sr-only">Close menu</span>
+              <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button></div>
+            :
+            <div></div>
+                }
                 {EditorTabs.map((tabs) => (
                   <Tab 
                     key={tabs.name}
@@ -133,19 +144,18 @@ const Customizer = () => {
                     handleClick={() => {setActiveEditorTab(tabs.name)}}
                   />
                 ))}
-
                 {generateTabContent()}
               </div>
             </div>
           </motion.div>
           <motion.div 
-            className='absolute z-10 top-20 right-25'
+            className='absolute z-10 top-40 left-2'
             {...fadeAnimation}
           >
             <CustomButton 
               type="filled"
               title="go back"
-              handleClick={() => state.intro = true }
+              handleClick={() => state.intro = true}
               customStyles="w-fit px-4 py-2.5 font-bold text-sm"
             />
           </motion.div>

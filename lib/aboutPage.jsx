@@ -9,15 +9,15 @@ export const about = [
         "type": "artists",
         "data": [
             {
-                "title": "Hansel Pam",
+                "title": "hansel pam",
                 "img": "/avatar.png",
-                "description": "Pam Hansel Jang, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. "
-            },
-            {
-                "title": "Isaac Udoh",
-                "img": "/avatar.png",
-                "description": "Isaac Udoh, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. "
-            },
+                "description": "Pam Hansel Jang, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. \nIn 2009, he got admission into Ahmadu Bello University Zaria and got a degree in Fine Arts in 2014. He ran a master’s degree program in the same institution. During this period he was able to make research on various techniques and approaches in painting. \nHe has spent his life teaching himself landscapes and abstract paintings, which reflects aesthetics and appreciation to his audience. These were mostly depicted using oil medium on canvas. His current discovery of a technique known as, ‘the masking’ technique, in which he uses the masking fluid, a latex-based product to create artworks that are appreciated and often times,  tell a story about himself and others or nature also. His media is mostly water colour and ink together with the masking fluid to create his art. In the masking technique, he hoped to create different shades of transparency and also using the negative and positive lines differently on approach which he was able to achieve that."
+            }
+            // {
+            //     "title": "Isaac Udoh",
+            //     "img": "/avatar.png",
+            //     "description": "Isaac Udoh, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. "
+            // },
         ]
     },
     {
@@ -50,7 +50,7 @@ const AboutPage = () => {
 
     
     return (
-        <div className="h-[100vh] bg-primary/30 py-32 text-center">
+        <div className="min-h-screen bg-primary/30 py-32 text-center">
             <motion.div className='flex py-6 px-6 flex-col sm:flex-row'>
                 {
                     index == 0 ?
@@ -175,7 +175,9 @@ const AboutPage = () => {
                                 {subItem?.subtitle}
                             </div>
                              <div className='flex flex-start text-justify' key={subItemIndex}>
+                                <p>
                              {subItem.description}
+                                </p>
                          </div>
                            </>
                         ))}
@@ -199,7 +201,9 @@ const AboutPage = () => {
                             {subItem?.subtitle}
                         </div>
                          <div className='flex flex-start text-justify' key={subItemIndex}>
+                            <p>
                          {subItem.description}
+                            </p>
                      </div>
                        </>
                     ))}

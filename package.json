@@ -32,6 +32,10 @@
     "react-paystack": "^4.0.3",
     "react-spinners": "^0.13.8",
     "react-tsparticles": "^2.12.2",
+<<<<<<< HEAD
+=======
+    "sass": "^1.69.5",
+>>>>>>> 08cc80f (ui fixes)
     "sharp": "^0.32.6",
     "swiper": "^10.3.1",
     "tailwind-merge": "^1.14.0",
