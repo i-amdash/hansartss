@@ -1,7 +1,8 @@
 
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
 import Layout from '@/lib/layout';
-import './globals.css'
+import './globals.css';
+import '@/components/modal.scss';
 
 import { Sora } from '@next/font/google'
 import { ThemeProvider } from '@/providers/theme-provider';

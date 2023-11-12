@@ -28,7 +28,6 @@ const PaintingCard: React.FC<PaintingCard> = ({
 
   const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
     event.stopPropagation();
-
     previewModal.onOpen(data);
   };
 
@@ -48,7 +47,11 @@ const PaintingCard: React.FC<PaintingCard> = ({
           fill
           className="aspect-square object-cover rounded-md"
         />
-        <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
+        {
+          data.isSold ?
+          <span className="inline-flex items-center rounded-md bg-secondary absolute px-6 top right-0 text-md font-medium">sold out</span>
+          :
+          <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">
             <IconButton 
               onClick={onPreview} 
@@ -60,6 +63,8 @@ const PaintingCard: React.FC<PaintingCard> = ({
             />
           </div>
         </div>
+        }
+        
       </div>
       {/* Description */}
       <div>

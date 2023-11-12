@@ -1,0 +1,83 @@
+/* for modal.js */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50 !important;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 27, 27, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        font-size: 30px;
+        color: #ffffff;
+        z-index: 50 !important;
+        cursor: pointer;
+      }
+     
+      img {
+        display: block;
+        max-width: 60%;
+        max-height: 80%;
+        margin: 60px auto;
+        box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+        @media screen and (max-width: 820px) {
+            max-width: 90%;
+            max-height: 100%;
+        }
+      }
+      .imgText{
+        .imgTitle{
+            color: white;
+            font-size: large;
+            font-weight: 800;
+            font-size: 22px;
+            z-index: 9999999999 !important;
+        }
+        .imgDesc{
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            font-size: 0.8rem;
+            text-align: left;
+            color: #b0b0b0 !important;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+      
+        .imgTitle{
+            position: absolute;
+            bottom: 10;
+            left: 0;
+            right: 0;
+            color: white;
+            font-size: large;
+            font-weight: 800;
+            padding: 1rem;
+            z-index: 9999;
+            
+        }
+
+        .imgDesc{
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+            padding-right: 1rem;
+            font-size: 0.8rem;
+            text-align: left;
+            color: #b0b0b0 !important;
+            line-height: 1.5;
+            // color: rgb(19, 19, 19);
+        }
+        
+      }
+  } 

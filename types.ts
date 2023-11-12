@@ -7,6 +7,7 @@ export interface Painting {
   medium: string;
   price: string;
   isFeatured: boolean;
+  isSold: boolean;
   size: Size;
   color: Color;
   images: Image[]
