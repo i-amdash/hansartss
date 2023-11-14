@@ -9,14 +9,14 @@ const testimonialData = [
   },
   {
     image: '/t-avt-2.png',
-    name: 'jane doe',
+    name: 'chika odili',
     position: 'customer',
     message:
       'amazing work, great portfolio, i bought three of his paintings last month and ive been getting compliments ever since, keep it up!',
   },
   {
     image: '/t-avt-3.png',
-    name: 'john doe',
+    name: 'johnathan richards',
     position: 'artist',
     message:
       'what an amazing artist, i love his works and always wondered how he creates stuff!',
