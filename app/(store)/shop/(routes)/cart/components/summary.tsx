@@ -87,7 +87,7 @@ const Summary = () => {
             name="email"
             value={email}
             onChange={handleChangeInput}
-            className="rounded-full pl-[12px] pr-[12px]"
+            className="rounded-full px-[12px] text-base"
           />
         </div>
       </div>
@@ -99,14 +99,14 @@ const Summary = () => {
             name="phone"
             value={phone}
             onChange={handleChangeInput}
-            className="rounded-full pl-[12px] pr-[12px]"
+            className="rounded-full px-[12px] text-base"
           />
         </div>
       </div>
       {/* <PaystackProvider amount={totalPrice}/> */}
       <Button
         onClick={onCheckout}
-        disabled={items.length === 0}
+        disabled={items.length === 0 || phone == "" || email == ""}
         className="w-full mt-6"
       >
         Checkout
