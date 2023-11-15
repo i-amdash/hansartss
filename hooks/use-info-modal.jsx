@@ -56,12 +56,12 @@ export default function Example() {
                   </div>
                 </div>
                 <div className="bg-secondary px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                    <Link href={'/shop'}>
+                    <Link href={'https://forms.office.com/r/aXXAqBvxjq'} target="_blank">
                     <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
                   >
-                    view paintings
+                    click here to register
                   </button>
                     </Link>
                   
