@@ -27,7 +27,7 @@ export const about = [
                 "title": "Fewl",
                 "img": "/ewl.jpeg",
                 "subtitle": "From Eko With Love",
-                "description": "fFrom Eko With Love is a solo art exhibition by Hansel Pam, organised by Hans Artss studio at Leisure hall, Landmark Towers, Victoria Island in Lagos. This event is set to hold on December 23rd and will host a myriad of beautiful artworks from Hansel Pam as he illustrates the fine city of Lagos and many others through his perspective. lovers of art and creatives, this is an event you sure dont want to miss out on."
+                "description": "From Eko With Love is a solo art exhibition by Hansel Pam, organised by Hans Artss studio at Leisure hall, Landmark Towers, Victoria Island in Lagos. This event is set to hold on December 23rd and will host a myriad of beautiful artworks from Hansel Pam as he illustrates the fine city of Lagos and many others through his perspective. lovers of art and creatives, this is an event you sure dont want to miss out on."
             },
             // {
             //     "title": "previous",
