@@ -49,7 +49,7 @@ const PaintingCard: React.FC<PaintingCard> = ({
         />
         {
           data.isSold ?
-          <span className="inline-flex items-center rounded-md bg-secondary absolute px-6 top right-0 text-md font-medium">sold out</span>
+          <span className="inline-flex items-center rounded-md bg-secondary absolute px-6 top right-0 text-md font-medium">Sold Out</span>
           :
           <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
           <div className="flex gap-x-6 justify-center">

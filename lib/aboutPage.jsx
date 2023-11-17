@@ -6,10 +6,10 @@ import { fadeIn } from '@/variants';
 
 export const about = [
     {
-        "type": "artist(s)",
+        "type": "Artist(s)",
         "data": [
             {
-                "title": "hansel pam",
+                "title": "Hansel Pam",
                 "img": "/hansel/hans.png",
                 "description": "Pam Hansel Jang, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. \nIn 2009, he got admission into Ahmadu Bello University Zaria and got a degree in Fine Arts in 2014. He ran a master’s degree program in the same institution. During this period he was able to make research on various techniques and approaches in painting. \nHe has spent his life teaching himself landscapes and abstract paintings, which reflects aesthetics and appreciation to his audience. These were mostly depicted using oil medium on canvas. His current discovery of a technique known as, ‘the masking’ technique, in which he uses the masking fluid, a latex-based product to create artworks that are appreciated and often times,  tell a story about himself and others or nature also. His media is mostly water colour and ink together with the masking fluid to create his art. In the masking technique, he hoped to create different shades of transparency and also using the negative and positive lines differently on approach which he was able to achieve that."
             }
@@ -21,13 +21,13 @@ export const about = [
         ]
     },
     {
-        "type": "exhibition(s)",
+        "type": "Exhibition(s)",
         "data": [
             {
-                "title": "fewl",
+                "title": "Fewl",
                 "img": "/ewl.jpeg",
-                "subtitle": "from eko with love",
-                "description": "from eko with love is a solo art exhibition by hansel pam, organised by the hansartss studio at leisure hall, landmark towers, victoria island in lagos. this event is set to hold on december 23rd and will host a myriad a beautiful artworks from hansel pam as he illustrates the fine city of lagos and many others through his perspective. lovers of art and creatives, this is an event you sure dont want to miss out on."
+                "subtitle": "From Eko With Love",
+                "description": "fFrom Eko With Love is a solo art exhibition by Hansel Pam, organised by Hans Artss studio at Leisure hall, Landmark Towers, Victoria Island in Lagos. This event is set to hold on December 23rd and will host a myriad of beautiful artworks from Hansel Pam as he illustrates the fine city of Lagos and many others through his perspective. lovers of art and creatives, this is an event you sure dont want to miss out on."
             },
             // {
             //     "title": "previous",

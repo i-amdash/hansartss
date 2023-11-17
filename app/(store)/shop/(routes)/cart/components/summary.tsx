@@ -75,13 +75,13 @@ const Summary = () => {
       <h2 className="text-lg font-medium">Order summary</h2>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">order total</div>
+          <div className="text-base font-medium">Order total</div>
           <Currency value={totalPrice} />
         </div>
       </div>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">email address</div>
+          <div className="text-base font-medium">Email Address</div>
           <input
             type="email"
             name="email"
@@ -93,7 +93,7 @@ const Summary = () => {
       </div>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">phone number</div>
+          <div className="text-base font-medium">Phone Number</div>
           <input
             type="number"
             name="phone"

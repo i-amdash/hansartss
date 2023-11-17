@@ -34,12 +34,12 @@ const Home = () => {
                         <motion.h2 
                         
                         className='h2 mt-16 '>
-                            get <br className='xl:block hidden'/> <span className="text-accent"> creative. </span> 
+                            Get <br className='xl:block hidden'/> <span className="text-accent"> creative. </span> 
                         </motion.h2>
                     </motion.div>
                     <motion.div {...headContentAnimation} className='flex flex-col gap-5'>
                         <p className='max-w-md font-normal text-base' >
-                            create your unique and exclusive shirt with our 3D customization tool 
+                            Create your unique and exclusive shirt with our 3D customization tool 
                             <strong> unleash your imagination </strong> { " " }
                             and define your own style.
                         </p>

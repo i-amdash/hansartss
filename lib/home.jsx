@@ -24,13 +24,13 @@ const HomePage = () => {
         initial="hidden" 
         animate="show" 
         exit="hidden"
-        className="h1">the corporate <span className="text-accent">artist</span></motion.h1>
+        className="h1">The Corporate <span className="text-accent">Artist</span></motion.h1>
         <motion.p 
         variants={fadeIn('down' , 0.3)} 
         initial="hidden" 
         animate="show" 
         exit="hidden"
-        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">take a deep dive into the mind of a creative genius and unravel in the brilliance that is ...</motion.p>
+        className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">Take a deep dive into the mind of a creative genius and unravel in the brilliance that is ...</motion.p>
         <motion.div 
         variants={fadeIn('down' , 0.4)} 
         initial="hidden" 
