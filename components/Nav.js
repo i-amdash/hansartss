@@ -48,8 +48,9 @@ const  Nav = () => {
               <div className='border-solid border-l-foreground  border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2'></div>
             </div>
           </div>
-          <div>
+          <div className='flex justify-center flex-col align-center items-center'>
           {link.icon}
+          <div className='text-[10px] pt-[5px] xl:hidden capitalize leading-none font-semibold'>{link.name}</div>
           </div>
           </Link>
           );

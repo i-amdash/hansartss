@@ -42,7 +42,7 @@ export default async function RootLayout({
           >
             <ToastProvider />
               <ModalProvider />
-          <Layout />
+                <Layout />
             {children}
             </ThemeProvider>
           </div>
