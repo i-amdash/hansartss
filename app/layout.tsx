@@ -20,7 +20,7 @@ const sora = Sora({
 
 export const metadata = {
   title: 'Hans Artss',
-  description: 'A Pantheon of Beautiful Thoughts',
+  description: 'The Corporate Artist',
   icons: {
     icon: '/icon.jpg',
   },
