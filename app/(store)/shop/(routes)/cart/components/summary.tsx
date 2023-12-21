@@ -75,38 +75,38 @@ const Summary = () => {
       <h2 className="text-lg font-medium">Order summary</h2>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">order total</div>
+          <div className="text-base font-medium">Order total</div>
           <Currency value={totalPrice} />
         </div>
       </div>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">email address</div>
+          <div className="text-base font-medium">Email Address</div>
           <input
             type="email"
             name="email"
             value={email}
             onChange={handleChangeInput}
-            className="rounded-full pl-[12px] pr-[12px]"
+            className="rounded-full px-[12px] text-base"
           />
         </div>
       </div>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-          <div className="text-base font-medium">phone number</div>
+          <div className="text-base font-medium">Phone Number</div>
           <input
             type="number"
             name="phone"
             value={phone}
             onChange={handleChangeInput}
-            className="rounded-full pl-[12px] pr-[12px]"
+            className="rounded-full px-[12px] text-base"
           />
         </div>
       </div>
       {/* <PaystackProvider amount={totalPrice}/> */}
       <Button
         onClick={onCheckout}
-        disabled={items.length === 0}
+        disabled={items.length === 0 || phone == "" || email == ""}
         className="w-full mt-6"
       >
         Checkout

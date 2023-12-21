@@ -21,7 +21,7 @@ const PortfolioPage = () => {
             exit='hidden'
             className="h2 xl:mt-12"
           >
-            port<span className="text-accent">folio .</span>
+            Port<span className="text-accent">folio .</span>
           </motion.h2>
           <motion.p
             variants={fadeIn ('up', 0.4)}
@@ -30,7 +30,7 @@ const PortfolioPage = () => {
             exit='hidden'
             className="mb-4 max-w-[400px] mx-auto lg:mx-0"
           >
-            some of my best works on display here
+            Some of my best works on display here
           </motion.p>
         </div>
         <motion.div

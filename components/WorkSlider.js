@@ -9,7 +9,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import { BsBagCheck } from 'react-icons/bs';  
-import Modal from "@/components/modal";
+import Modal from "@/components/Modal";
 
 // data
 const workSlides = {

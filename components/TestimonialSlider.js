@@ -2,24 +2,24 @@
 const testimonialData = [
   {
     image: '/t-avt-1.png',
-    name: 'anne smith',
-    position: 'art enthusiast',
+    name: 'Anne Smith',
+    position: 'Art enthusiast',
     message:
-      'good job, went through his portfolio and got six great paintings, very inspirational work you have here!',
+      'Good job, went through his portfolio and got six great paintings, very inspirational work you have here!',
   },
   {
     image: '/t-avt-2.png',
-    name: 'jane doe',
+    name: 'Chika Odili',
     position: 'customer',
     message:
-      'amazing work, great portfolio, i bought three of his paintings last month and ive been getting compliments ever since, keep it up!',
+      'Amazing work, great portfolio, i bought three of his paintings last month and ive been getting compliments ever since, keep it up!',
   },
   {
     image: '/t-avt-3.png',
-    name: 'john doe',
+    name: 'Jonathan Richards',
     position: 'artist',
     message:
-      'what an amazing artist, i love his works and always wondered how he creates stuff!',
+      'What an amazing artist, i love his works and always wondered how he creates stuff!',
   },
 ];
 
