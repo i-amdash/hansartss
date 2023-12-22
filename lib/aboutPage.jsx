@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/variants';
+import Image from 'next/image';
 
 export const about = [
     {
@@ -10,8 +11,12 @@ export const about = [
         "data": [
             {
                 "title": "Hansel Pam",
-                "img": "/hansel/hans.png",
-                "description": "Pam Hansel Jang, was born on the 23rd of October 1991 in Jos, Plateau State. He is from Jos South Local Government in Plateau State. He attended Air force primary School in Jos, Plateau State and moved to a secondary school called Bethany Christian Academy, Barkin Ladi in the same State. \nIn 2009, he got admission into Ahmadu Bello University Zaria and got a degree in Fine Arts in 2014. He ran a master’s degree program in the same institution. During this period he was able to make research on various techniques and approaches in painting. \nHe has spent his life teaching himself landscapes and abstract paintings, which reflects aesthetics and appreciation to his audience. These were mostly depicted using oil medium on canvas. His current discovery of a technique known as, ‘the masking’ technique, in which he uses the masking fluid, a latex-based product to create artworks that are appreciated and often times,  tell a story about himself and others or nature also. His media is mostly water colour and ink together with the masking fluid to create his art. In the masking technique, he hoped to create different shades of transparency and also using the negative and positive lines differently on approach which he was able to achieve that."
+                "img": "/hansel/hansel.jpg",
+                "description": `Hansel is a professionally trained artist having earned his bachelor’s degree in fine art from the prestigious Ahmadu Bello University. His academic journey laid the foundation for a career marked by innovation and a relentless pursuit of artistic excellence. 
+                
+                Throughout the years, Hansel has immersed himself in the world of fine art, channeling his passion into meticulous research and experimentation. His artistic evolution led him to a groundbreaking discovery of a masking technique that has become the hallmark of his distinctive style.
+                
+                This masking technique, honed through years of dedication, has allowed Hansel to breathe new life into traditional watercolor and ink painting. The transformation is nothing short of spectacular, as he deftly weaves layers of meaning and emotion onto the canvas and papers. His work stands as a testament to the transformative power of art, transcending the boundaries of conventional media.`
             }
             // {
             //     "title": "Isaac Udoh",
@@ -24,10 +29,10 @@ export const about = [
         "type": "Exhibition(s)",
         "data": [
             {
-                "title": "Fewl",
+                "title": "FEWL",
                 "img": "/ewl.jpeg",
                 "subtitle": "From Eko With Love",
-                "description": "From Eko With Love is a solo art exhibition by Hansel Pam, organised by Hans Artss studio at Leisure hall, Landmark Towers, Victoria Island in Lagos. This event is set to hold on December 23rd and will host a myriad of beautiful artworks from Hansel Pam as he illustrates the fine city of Lagos and many others through his perspective. lovers of art and creatives, this is an event you sure dont want to miss out on."
+                "description": "From Eko With Love is an art exhibition showcasing beautiful works from a myriad of wonderful artists, organised by Hans Artss studio at Landmark Retail Boulevard, Water Corporation Road, Victoria Island in Lagos. This event is set to hold on December 23rd. Lovers of art and creatives, this is an event you sure dont want to miss out on."
             },
             // {
             //     "title": "previous",
@@ -62,10 +67,12 @@ const AboutPage = () => {
                 className='flex flex-col justify-center items-center rounded-lg w-full h-[15rem] sm:h-full xl:max-w-[42%]'>
                     {about[index].data.map((abouts, aboutsId) => (
                         (aboutsId == innerIndex) && 
-                        <img
+                        <Image
                         key={aboutsId}
                         src={abouts.img}
                         alt={abouts.title}
+                        width={450}
+                        height={450}
                         className='w-[90%] h-[90%] object-contain rounded-lg'
                     />
                     ))}
@@ -76,14 +83,16 @@ const AboutPage = () => {
                 initial="hidden" 
                 animate="show" 
                 exit="hidden"
-                className='flex flex-col justify-center items-center rounded-[3rem] w-full xl:max-w-[42%]'>
+                className='flex flex-col justify-center items-center rounded-lg w-full xl:max-w-[42%]'>
                     {about[index].data.map((abouts, aboutsId) => (
                         (aboutsId == exIndex) && 
-                        <img
+                        <Image
                         key={aboutsId}
                         src={abouts.img}
+                        width={450}
+                        height={450}
                         alt={abouts.title}
-                        className='w-[90%] h-[90%] object-contain rounded-[3rem]'
+                        className='w-[90%] h-[90%] object-contain rounded-lg'
                     />
                     ))}
                 </motion.div>
