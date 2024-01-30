@@ -34,26 +34,15 @@ export const about = [
                 "subtitle": "From Eko With Love",
                 "description": "From Eko With Love is an art exhibition showcasing beautiful works from a myriad of wonderful artists, organised by Hans Artss studio at Landmark Retail Boulevard, Water Corporation Road, Victoria Island in Lagos. This event is set to hold on December 23rd. Lovers of art and creatives, this is an event you sure dont want to miss out on."
             },
-            // {
-            //     "title": "previous",
-            //     "img": "/hansel/o9.jpg",
-            //     "subtitle": "from previous exhibitions",
-            //     "description": "Previous exhibition i want people to know more about."
-            // }
         ]
-    }
-            
-            
+    }     
 ];
 
 const AboutPage = () => {
-    
     const [index, setIndex] = useState(0);
     const [innerIndex, setInnerIndex] = useState(0);
     const [type, setType] = useState("");
     const [exIndex, setexIndex] = useState(0);
-
-    
     return (
         <div className="min-h-screen bg-primary/30 py-32 text-center">
             <motion.div className='flex py-6 px-6 flex-col sm:flex-row'>
