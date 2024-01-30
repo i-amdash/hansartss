@@ -46,7 +46,7 @@ export default function Example() {
                       </Dialog.Title>
                       <div className="mt-2">
                         <Image
-                            src={'/fewls.jpeg'}
+                            src={'/CUPID_MEETS_ART.png'}
                             height={400}
                             width={400}
                             alt=""
