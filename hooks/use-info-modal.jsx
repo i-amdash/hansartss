@@ -61,20 +61,20 @@ export default function Example() {
                     <Link href={'/shop'}>
                     <button
                     type="button"
-                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 pt-2 pb-6 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto gap-2"
+                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto gap-2"
                   >
-                    Get Paintings <HiShoppingBag fontSize="1.2em" />
+                    Buy Paintings (50% discount till 17th February) <HiShoppingBag fontSize="1.2em" />
                   </button>
                   </Link>
                   
-                  <Link href={'/Hansart_Pricelist.pdf'} target="_blank">
+                  {/* <Link href={'/Hansart_Pricelist.pdf'} target="_blank">
                     <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
                   >
                     View Hans Artss Pricelist
                   </button>
-                    </Link>
+                    </Link> */}
                   
                   <button
                     type="button"
