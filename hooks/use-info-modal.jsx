@@ -1,5 +1,7 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+// icons
+import { HiShoppingBag } from 'react-icons/hi2';
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -42,13 +44,13 @@ export default function Example() {
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6">
-                        Upcoming Exhibition
+                        Upcoming Event
                       </Dialog.Title>
                       <div className="mt-2">
                         <Image
                             src={'/CUPID_MEETS_ART.png'}
                             height={400}
-                            width={400}
+                            width={600}
                             alt=""
                         />
                       </div>
@@ -56,7 +58,16 @@ export default function Example() {
                   </div>
                 </div>
                 <div className="bg-secondary px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
-                    <Link href={'/Hansart_Pricelist.pdf'} target="_blank">
+                    <Link href={'/shop'}>
+                    <button
+                    type="button"
+                    className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 pt-2 pb-6 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto gap-2"
+                  >
+                    Get Paintings <HiShoppingBag fontSize="1.2em" />
+                  </button>
+                  </Link>
+                  
+                  <Link href={'/Hansart_Pricelist.pdf'} target="_blank">
                     <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
