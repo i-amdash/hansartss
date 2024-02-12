@@ -47,12 +47,14 @@ export default function Example() {
                         Upcoming Event
                       </Dialog.Title>
                       <div className="mt-2">
-                        <Image
-                            src={'/CUPID_MEETS_ART.png'}
+                        <Link href={'https://www.event.landmarkbeach.ng/ticket/cupid-meets-art1706807603'} target="_blank">
+                          <Image
+                            src={'/CUPID.png'}
                             height={400}
                             width={600}
                             alt=""
                         />
+                        </Link>
                       </div>
                     </div>
                   </div>
